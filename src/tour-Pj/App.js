@@ -27,6 +27,7 @@ function App() {
       console.log("error in loading url");
     }
   };
+
   useEffect(() => {
     fetchTours(); //when page load first we get the data from url
   }, []); //   []  mean useEffect only one time rerender page
