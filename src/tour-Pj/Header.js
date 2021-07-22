@@ -8,18 +8,18 @@ const Header = () => {
     <header className="header">
       <h2 className="header-text">learning react</h2>
       <div className="header-icons">
-        <h1>
+        <h3>
           <FaTelegram />
-        </h1>
-        <h1>
+        </h3>
+        <h3>
           <IoLogoWhatsapp />
-        </h1>
-        <h1>
+        </h3>
+        <h3>
           <AiFillInstagram />
-        </h1>
-        <h1>
+        </h3>
+        <h3>
           <SiGmail />
-        </h1>
+        </h3>
       </div>
     </header>
   );

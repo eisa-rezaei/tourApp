@@ -244,7 +244,7 @@ main {
   flex-direction: column;
   justify-content: space-between;
 }
-.header-icons h1 {
+.header-icons h3 {
   margin: 0 5px;
 }
 .header {
@@ -262,7 +262,6 @@ main {
 }
 .header-text {
   color: goldenrod;
-  font-size: 20px;
 }
 .header-icons {
   color: white;
