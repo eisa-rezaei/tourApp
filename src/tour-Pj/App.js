@@ -74,7 +74,7 @@ function App() {
           <Home />
         </Route>
         <Route path="/addtour">
-          <Home />
+          <AddTour />
         </Route>
       </main>
     </Router>
