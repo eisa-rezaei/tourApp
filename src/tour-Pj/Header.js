@@ -6,7 +6,7 @@ import { SiGmail } from "react-icons/si";
 const Header = () => {
   return (
     <header className="header">
-      <h2 className="header-text">learning react</h2>
+      <h3 className="header-text">learning react</h3>
       <div className="header-icons">
         <h3>
           <FaTelegram />
