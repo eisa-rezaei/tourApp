@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/tourApp/static/css/main.624f1e89.chunk.css",
-    "main.js": "/tourApp/static/js/main.538e2bf3.chunk.js",
-    "main.js.map": "/tourApp/static/js/main.538e2bf3.chunk.js.map",
+    "main.css": "/tourApp/static/css/main.7dd74638.chunk.css",
+    "main.js": "/tourApp/static/js/main.438b6907.chunk.js",
+    "main.js.map": "/tourApp/static/js/main.438b6907.chunk.js.map",
     "runtime-main.js": "/tourApp/static/js/runtime-main.5a5eacf2.js",
     "runtime-main.js.map": "/tourApp/static/js/runtime-main.5a5eacf2.js.map",
-    "static/js/2.6924a3ca.chunk.js": "/tourApp/static/js/2.6924a3ca.chunk.js",
-    "static/js/2.6924a3ca.chunk.js.map": "/tourApp/static/js/2.6924a3ca.chunk.js.map",
+    "static/js/2.24bb4bee.chunk.js": "/tourApp/static/js/2.24bb4bee.chunk.js",
+    "static/js/2.24bb4bee.chunk.js.map": "/tourApp/static/js/2.24bb4bee.chunk.js.map",
     "index.html": "/tourApp/index.html",
-    "static/css/main.624f1e89.chunk.css.map": "/tourApp/static/css/main.624f1e89.chunk.css.map",
-    "static/js/2.6924a3ca.chunk.js.LICENSE.txt": "/tourApp/static/js/2.6924a3ca.chunk.js.LICENSE.txt"
+    "static/css/main.7dd74638.chunk.css.map": "/tourApp/static/css/main.7dd74638.chunk.css.map",
+    "static/js/2.24bb4bee.chunk.js.LICENSE.txt": "/tourApp/static/js/2.24bb4bee.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.5a5eacf2.js",
-    "static/js/2.6924a3ca.chunk.js",
-    "static/css/main.624f1e89.chunk.css",
-    "static/js/main.538e2bf3.chunk.js"
+    "static/js/2.24bb4bee.chunk.js",
+    "static/css/main.7dd74638.chunk.css",
+    "static/js/main.438b6907.chunk.js"
   ]
 }
