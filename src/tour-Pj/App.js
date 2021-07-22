@@ -1,14 +1,19 @@
 import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Tours from "./tours";
 import Header from "./Header";
 import "./index.css";
 import Loadnig from "./loading";
+import Bio from "./bio/bio";
+import Home from "./home/home";
+import AddTour from "./addtour/AddTour";
 const url = "https://course-api.com/react-tours-project";
 
 function App() {
   //constant part
   const [loading, setLoading] = useState(true); //loading is true
   const [tours, setTours] = useState([]); //set empty array for tpurs for default
+  const [color, setColor] = useState(false);
 
   const removeTour = (id) => {
     const newTours = tours.filter((tour) => tour.id !== id);
@@ -55,10 +60,24 @@ function App() {
     );
   }
   return (
-    <main>
-      <Header />
-      <Tours tours={tours} removeTour={removeTour} />
-    </main>
+    <Router>
+      <main className={color ? `dark` : ``}>
+        <Header color={() => setColor(!color)} />
+        <Route path="/tours">
+          <Tours tours={tours} removeTour={removeTour} color={color} />
+        </Route>
+
+        <Route path="/Bio">
+          <Bio />
+        </Route>
+        <Route path="/" exact>
+          <Home />
+        </Route>
+        <Route path="/addtour">
+          <Home />
+        </Route>
+      </main>
+    </Router>
   );
 }
 

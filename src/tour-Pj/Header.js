@@ -1,24 +1,32 @@
-import { FaTelegram } from "react-icons/fa";
-import { IoLogoWhatsapp } from "react-icons/io";
-import { AiFillInstagram } from "react-icons/ai";
-import { SiGmail } from "react-icons/si";
+import React from "react";
+import { Link } from "react-router-dom";
+import { FaHome } from "react-icons/fa";
+import { AiFillQuestionCircle } from "react-icons/ai";
+import { IoMdAddCircle } from "react-icons/io";
+import { BiSun } from "react-icons/bi";
 
-const Header = () => {
+const Header = ({ color }) => {
   return (
     <header className="header">
-      <h3 className="header-text">learning react</h3>
+      <h3 className="header-text">Eisa rezaei</h3>
       <div className="header-icons">
         <h3>
-          <FaTelegram />
+          <BiSun onClick={color} />
         </h3>
         <h3>
-          <IoLogoWhatsapp />
+          <Link to="/bio">
+            <AiFillQuestionCircle />
+          </Link>
         </h3>
         <h3>
-          <AiFillInstagram />
+          <Link to="/addtour">
+            <IoMdAddCircle />
+          </Link>
         </h3>
         <h3>
-          <SiGmail />
+          <Link to="/tours">
+            <FaHome />
+          </Link>
         </h3>
       </div>
     </header>
