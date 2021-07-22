@@ -127,10 +127,15 @@ p {
   margin: 0 auto;
   max-width: var(--max-width);
 }
-
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 650px) {
   .section {
     width: 95vw;
+  }
+  .header {
+    grid-template-columns: 2fr 1fr;
+  }
+  .header-icons {
+    visibility: hidden;
   }
 }
 .btn {
@@ -166,9 +171,10 @@ main {
 .underline {
   width: 6rem;
   height: 0.25rem;
-  background: var(--clr-primary-5);
-  margin-left: auto;
-  margin-right: auto;
+  background-color: var(--clr-primary-10);
+  margin: 0 auto;
+  animation: loading 4s infinite linear;
+  transition: all 4s linear;
 }
 
 .single-tour,
@@ -251,7 +257,6 @@ main {
   margin: 0 auto 10px auto;
   display: grid;
   grid-template-columns: 4fr 1fr;
-  grid-template-rows: 1fr;
   gap: 1px;
   padding: 10px 20px;
   width: 100%;
@@ -262,18 +267,34 @@ main {
 }
 .header-text {
   color: goldenrod;
+  padding: 10px 0;
+  margin: 0;
 }
 .header-icons {
-  color: white;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: space-between;
+  color: var(--clr-primary-4);
+  text-decoration: none;
 }
 .header-icons h3 :hover {
-  color: gray;
   cursor: pointer;
   transition: 0.1s linear;
 }
 .header-icons h3 {
-  padding: 5px 0;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50%;
+  color : steelblue;
+}
+.dark {
+  background-color: var(--clr-black);
+  color: var(--clr-primary-7);
+}
+@keyframes loading {
+  60% {
+    width: 12rem;
+    background-color: var(--clr-primary-1);
+  }
 }
