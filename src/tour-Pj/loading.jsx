@@ -8,7 +8,6 @@ const Loadnig = () => {
         <div className="underline"></div>
       </div>
       <article className="single-tour-loading">
-        <img />
         <footer>
           <div className="tour-info-loading">
             <h4 className="tour-price-loading">created by eisa rezaei</h4>
