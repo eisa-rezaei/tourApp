@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 import Tours from "./tours";
 import Header from "./Header";
 import "./index.css";
@@ -63,16 +63,16 @@ function App() {
     <Router>
       <main className={color ? `dark` : ``}>
         <Header color={() => setColor(!color)} />
-        <Route path="/tours">
-          <Tours tours={tours} removeTour={removeTour} color={color} />
-        </Route>
-
-        <Route path="/Bio">
-          <Bio />
-        </Route>
         <Route path="/" exact>
           <Home />
         </Route>
+        <Route path="/tours">
+          <Tours tours={tours} removeTour={removeTour} color={color} />
+        </Route>
+        <Route path="/Bio">
+          <Bio />
+        </Route>
+
         <Route path="/addtour">
           <AddTour />
         </Route>
