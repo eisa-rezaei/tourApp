@@ -250,7 +250,7 @@ main {
 .header {
   margin: 0 auto 10px auto;
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 4fr 1fr;
   grid-template-rows: 1fr;
   gap: 1px;
   padding: 10px 20px;
@@ -262,4 +262,16 @@ main {
 }
 .header-text {
   color: goldenrod;
+}
+.header-icons {
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+  font-size: small;
+}
+.header-icons h1 :hover {
+  color: gray;
+  cursor: pointer;
+  transition: 0.1s linear;
 }
