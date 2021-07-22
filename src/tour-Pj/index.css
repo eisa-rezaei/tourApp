@@ -268,9 +268,10 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: space-between;
-  font-size: 10px;
+  text-align: center;
+  padding: 2px;
 }
-.header-icons h1 :hover {
+.header-icons h3 :hover {
   color: gray;
   cursor: pointer;
   transition: 0.1s linear;
