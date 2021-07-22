@@ -250,7 +250,7 @@ main {
 .header {
   margin: 0 auto 10px auto;
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr;
   gap: 1px;
   padding: 10px 20px;
