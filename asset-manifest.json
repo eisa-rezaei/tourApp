@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/tourApp/static/css/main.8d7c53b5.chunk.css",
-    "main.js": "/tourApp/static/js/main.fbef335a.chunk.js",
-    "main.js.map": "/tourApp/static/js/main.fbef335a.chunk.js.map",
+    "main.js": "/tourApp/static/js/main.538e2bf3.chunk.js",
+    "main.js.map": "/tourApp/static/js/main.538e2bf3.chunk.js.map",
     "runtime-main.js": "/tourApp/static/js/runtime-main.5a5eacf2.js",
     "runtime-main.js.map": "/tourApp/static/js/runtime-main.5a5eacf2.js.map",
     "static/js/2.6924a3ca.chunk.js": "/tourApp/static/js/2.6924a3ca.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.5a5eacf2.js",
     "static/js/2.6924a3ca.chunk.js",
     "static/css/main.8d7c53b5.chunk.css",
-    "static/js/main.fbef335a.chunk.js"
+    "static/js/main.538e2bf3.chunk.js"
   ]
 }
