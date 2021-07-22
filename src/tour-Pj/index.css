@@ -239,3 +239,27 @@ main {
   color: white;
   border: 1px solid var(--clr-red-light);
 }
+.header-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header-icons h1 {
+  margin: 0 5px;
+}
+.header {
+  margin: 0 auto 10px auto;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1px;
+  padding: 10px 20px;
+  width: 100%;
+  background-color: #202020d7;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.header-text {
+  color: goldenrod;
+}
