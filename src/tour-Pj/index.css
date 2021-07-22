@@ -268,11 +268,12 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: space-between;
-  text-align: center;
-  padding: 2px;
 }
 .header-icons h3 :hover {
   color: gray;
   cursor: pointer;
   transition: 0.1s linear;
+}
+.header-icons h3 {
+  padding: 5px 0;
 }
