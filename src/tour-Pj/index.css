@@ -262,13 +262,14 @@ main {
 }
 .header-text {
   color: goldenrod;
+  font-size: 20px;
 }
 .header-icons {
   color: white;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: space-between;
-  font-size: small;
+  font-size: 10px;
 }
 .header-icons h1 :hover {
   color: gray;
