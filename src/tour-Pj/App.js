@@ -57,10 +57,10 @@ function App() {
     <Router>
       <main>
         <Route path="/" exact>
-          <Home />
+          <Tours tours={tours} removeTour={removeTour} />
         </Route>
         <Route path="/tours">
-          <Tours tours={tours} removeTour={removeTour} />
+          <Home />
         </Route>
         <Route path="/Bio">
           <Bio />
