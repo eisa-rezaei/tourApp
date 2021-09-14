@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { HashRouter as Router, Route } from "react-router-dom";
 import Tours from "./tours";
-import Header from "./Header";
 import "./index.css";
 import Loadnig from "./loading";
 import Bio from "./bio/bio";
@@ -10,10 +9,8 @@ import AddTour from "./addtour/AddTour";
 const url = "https://course-api.com/react-tours-project";
 
 function App() {
-  //constant part
-  const [loading, setLoading] = useState(true); //loading is true
-  const [tours, setTours] = useState([]); //set empty array for tpurs for default
-  const [color, setColor] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [tours, setTours] = useState([]);
 
   const removeTour = (id) => {
     const newTours = tours.filter((tour) => tour.id !== id);
@@ -21,26 +18,23 @@ function App() {
   };
 
   const fetchTours = async () => {
-    setLoading(true); //because we getting data we most do this
+    setLoading(true);
     try {
-      //we do try and catch for fetching data to change in settings
-      const response = await fetch(url); //catching url from "url" and add it in response
-      const tours = await response.json(); // take data from response and add it to j.son file
-      setLoading(false); //loading is completed
-      setTours(tours); //we replace what we get from url and invoke it with setTour
+      const response = await fetch(url);
+      const tours = await response.json();
+      setLoading(false);
+      setTours(tours);
     } catch (error) {
       setLoading(false);
       console.log("error in loading url");
     }
   };
   useEffect(() => {
-    fetchTours(); //when page load first we get the data from url
-  }, []); //   []  mean useEffect only one time rerender page
-
-  //jsx part
+    fetchTours();
+  }, []);
 
   if (loading) {
-    /*is true */ return (
+    return (
       <main>
         <Loadnig tours={tours} />
       </main>
@@ -61,13 +55,12 @@ function App() {
   }
   return (
     <Router>
-      <main className={color ? `dark` : ``}>
-        <Header color={() => setColor(!color)} />
+      <main>
         <Route path="/" exact>
           <Home />
         </Route>
         <Route path="/tours">
-          <Tours tours={tours} removeTour={removeTour} color={color} />
+          <Tours tours={tours} removeTour={removeTour} />
         </Route>
         <Route path="/Bio">
           <Bio />
