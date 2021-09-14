@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const Tour = ({ id, name, image, info, price, removeTour, color }) => {
   const [readmore, setReadmore] = useState(false);
   return (
-    <article className={color ? `single-tour dark` : `single-tour`}>
+    <article className="single-tour">
       <img src={image} alt={name} />
       <footer>
         <div className="tour-info">
